@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "나만의 커서",
+    "description": "나 만 의 커 서 만 들 기",
+    "version": "0.0.1",
+    "icons": {
+        "16": "logo/logo-16.png",
+        "48": "logo/logo-48.png",
+        "128": "logo/logo-128.png"
+    },
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "content_scripts": [{
+        "js": ["foreground.js"],
+        "css": ["cursor.css"],
+        "matches": ["<all_urls>"]
+    }]
+}

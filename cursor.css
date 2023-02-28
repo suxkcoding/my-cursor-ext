@@ -1,0 +1,36 @@
+* {
+    cursor: none;
+}
+#MyCursor {
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    top: 0px;
+    left: 0px;
+    user-select: none;
+    pointer-events: none;
+    z-index: 987654321;
+    box-sizing: border-box;
+}
+#MyCursor > .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+#MyCursor > .caret {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    border: 2px solid rgba(65, 65, 65, 0.5);
+    background-color: rgba(128, 128, 128, .5);
+    border-radius: 50%;
+    z-index: 1;
+}

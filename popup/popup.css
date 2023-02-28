@@ -1,0 +1,33 @@
+body {
+    background-color: #222;
+    color: #eee;
+    width: 280px;
+    padding: 0.5rem 0.625rem;
+    box-sizing: border-box;
+}
+
+input[type=file] {
+    width: 64px;
+    height: 64px;
+    color: transparent;
+    background-image: url(upload.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+input[type=file]::file-selector-button {
+    display: none;
+}
+
+.row {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-sizing: border-box;
+}
+
+.col {
+    text-align: center;
+}
